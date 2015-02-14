@@ -1,3 +1,4 @@
+var React = require('react');
 var EventListItem = React.createClass({
 
   render: function() {
@@ -13,3 +14,5 @@ var EventListItem = React.createClass({
     this.props.onClick(this.props.event);
   }
 });
+
+module.exports = EventListItem;

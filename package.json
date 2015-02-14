@@ -1,0 +1,31 @@
+{
+  "name": "rally-how-to-react",
+  "version": "1.0.0",
+  "description": "Intro to React live-code session given for refactotum on Feb 11, 2015",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --port 3001 --progress --colors --content-base livecode/",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/songawee/rally-how-to-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/songawee/rally-how-to-react/issues"
+  },
+  "homepage": "https://github.com/songawee/rally-how-to-react",
+  "dependencies": {
+    "webpack": "^1.5.3"
+  },
+  "devDependencies": {
+    "6to5-core": "^3.6.5",
+    "6to5-loader": "^3.0.0",
+    "react": "^0.12.2",
+    "react-hot-loader": "^1.1.5",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
