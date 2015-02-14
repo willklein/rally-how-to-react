@@ -1,3 +1,9 @@
+var React = require('react');
+var Header = require('./Header.jsx');
+var EventList = require('./EventList.jsx');
+var EventDetail = require('./EventDetail.jsx');
+var EventsData = require('../../data/EventsData');
+
 var App = React.createClass({
   getInitialState: function() {
     var events = this._getEvents();
@@ -23,7 +29,7 @@ var App = React.createClass({
   },
 
   _getEvents: function() {
-    return eventsData.events;
+    return EventsData.events;
   },
 
   _onSelect: function(event) {

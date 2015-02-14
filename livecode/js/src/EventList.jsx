@@ -1,3 +1,6 @@
+var React = require('react');
+var EventListItem = require('./EventListItem');
+
 var EventList = React.createClass({
   render: function() {
     var events = this.props.events;
@@ -18,7 +21,9 @@ var EventList = React.createClass({
 
   _getEvent: function(event) {
     return (
-      <EventListItem event={ event } onClick={ this.props.onSelect }/>
+      <EventListItem key={ event.id } event={ event } onClick={ this.props.onSelect }/>
     );
   }
 });
+
+module.exports = EventList;

@@ -1,3 +1,5 @@
+var React = require('react');
+
 var EventDetail = React.createClass({
   shouldComponentUpdate: function(nextProps, nextState) {
     return nextProps.event !== this.props.event;
@@ -14,7 +16,7 @@ var EventDetail = React.createClass({
     return (
       <div className="col-lg-6">
         <h3>{ event.title }</h3>
-        <p><time datetime="2015-02-16">{ event.date }</time></p>
+        <p><time dateTime="2015-02-16">{ event.date }</time></p>
         <p>{ event.description }</p>
       </div>
     );
@@ -25,3 +27,5 @@ var EventDetail = React.createClass({
 
   },
 });
+
+module.exports = EventDetail;
